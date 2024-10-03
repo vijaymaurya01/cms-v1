@@ -17,7 +17,6 @@ import { List } from "@phosphor-icons/react";
 import { useRouter } from 'next/navigation';
 import { PATHS } from "../constants/paths";
 import SearchAppBar from "../common/searchbar";
-import logo from "@/app/components/common/logo.png"
 
 const settings = ["Profile", "Logout"];
 

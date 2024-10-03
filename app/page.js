@@ -5,6 +5,7 @@ import Footer from "./components/Footer/footer";
 import Homepage from "./components/Homepage/page";
 import UserNavbar from "./components/Navbar/usernavbar";
 import Testnavbar from "./components/Navbar/testnavbar";
+import Nav2 from "./components/Navbar/Nav2";
 
 
 export default function Home() {
@@ -13,6 +14,8 @@ export default function Home() {
    {/* <Navbar/> */}
    <Testnavbar/>
        {/* <Header/> */}
+
+    {/* <Nav2/> */}
     <main className="container mx-auto p-6">
         <Homepage/>
       </main>

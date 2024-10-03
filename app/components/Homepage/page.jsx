@@ -1,19 +1,18 @@
 import BlogList from "../BlogList/BlogList";
 import ContactUs from "../contactUs/ContactUs";
 import Feature from "../Feature/Feature";
+import Login from "../Login/Login";
 import Newslatter from "../Newsletter/Newslatter";
+import SignUpForm from "../Signup/SignUpForm";
 import Banner from "./banner";
-import Jumborton from "./jumborton";
 import MainBanner from "./MainBanner";
 import Team from "./team";
 import Trends from "./trends";
-import Image from "next/image";
 
 export default function Homepage() {
   return (
     <div>
       <MainBanner/>
-      {/* <Jumborton /> */}
       <Banner />
       <Feature/>
       <BlogList/>
@@ -21,6 +20,8 @@ export default function Homepage() {
       <Team />
       <Newslatter/>
       <ContactUs />
+      {/* <Login/> */}
+      {/* <SignUpForm/> */}
     </div>
   );
 }

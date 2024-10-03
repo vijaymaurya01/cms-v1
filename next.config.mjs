@@ -14,6 +14,11 @@ const nextConfig = {
           protocol: 'https',
           hostname: 'api.uifaces.co',
         },
+        {
+          protocol: 'https',
+          hostname: 'tecdn.b-cdn.net',
+          pathname: '/img/Photos/new-templates/bootstrap-login-form/**',
+        },
       ],
     },
   };

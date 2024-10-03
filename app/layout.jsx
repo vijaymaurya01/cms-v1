@@ -1,11 +1,16 @@
 import './globals.css';
 
-function RootLayout({ children }) {
+import TestNavbar from '../app/components/Navbar/testnavbar';
+
+export default function RootLayout({ children }) {
   return (
+   
     <html lang="en">
-      <body>{children}</body>
+       <header><TestNavbar/></header>
+      <body>
+        
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
-
- export default RootLayout;
