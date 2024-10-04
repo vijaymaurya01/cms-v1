@@ -4,10 +4,11 @@ import Feature from "../Feature/Feature";
 import Login from "../Login/Login";
 import Newslatter from "../Newsletter/Newslatter";
 import SignUpForm from "../Signup/SignUpForm";
+import Trends from "../TrendingTopic/Trends";
 import Banner from "./banner";
 import MainBanner from "./MainBanner";
 import Team from "./team";
-import Trends from "./trends";
+// import Trends from "./trends";
 
 export default function Homepage() {
   return (
@@ -16,8 +17,10 @@ export default function Homepage() {
       <Banner />
       <Feature/>
       <BlogList/>
-      <Trends />
+      {/* <Trends /> */}
+    <Trends/>
       <Team />
+    
       <Newslatter/>
       <ContactUs />
       {/* <Login/> */}

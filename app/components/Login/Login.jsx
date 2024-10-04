@@ -77,7 +77,7 @@ export default function Login() {
                     </svg>
                     Continue with Google
                 </button>
-                <p className="text-center">Don&apos;t have an account? <a href="javascript:void(0)" className="font-medium text-indigo-600 hover:text-indigo-500">Sign up</a></p>
+                <p className="text-center">Don&apos;t have an account? <a href="/Signup" className="font-medium text-indigo-600 hover:text-indigo-500">Sign up</a></p>
             </div>
         </main>
     )

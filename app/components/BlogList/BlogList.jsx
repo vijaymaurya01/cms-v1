@@ -32,6 +32,20 @@ export default function BlogList() {
       date: "Jan 4 2022",
       href: "javascript:void(0)",
     },
+    {
+      title: "How to Use Root C++ Interpreter Shell to Write C++ Programs",
+      desc: "The powerful gravity waves resulting from the impact of the planets' moons â€” four in total â€” were finally resolved in 2015 when gravitational.",
+      img: "https://images.unsplash.com/photo-1617529497471-9218633199c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      date: "Jan 4 2022",
+      href: "javascript:void(0)",
+    },
+    {
+      title: "How to Use Root C++ Interpreter Shell to Write C++ Programs",
+      desc: "The powerful gravity waves resulting from the impact of the planets' moons â€” four in total â€” were finally resolved in 2015 when gravitational.",
+      img: "https://images.unsplash.com/photo-1617529497471-9218633199c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      date: "Jan 4 2022",
+      href: "javascript:void(0)",
+    },
   ];
   return (
     <section className="py-32">
@@ -43,7 +57,7 @@ export default function BlogList() {
           <p className="text-gray-600">
             Blogs that are loved by the community. Updated every hour.
           </p>
-          <form
+          {/* <form
             onSubmit={(e) => e.preventDefault()}
             className="items-center justify-center gap-3 sm:flex"
           >
@@ -71,7 +85,7 @@ export default function BlogList() {
             <button className="block w-full mt-3 py-3 px-4 font-medium text-sm text-center text-white bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 active:shadow-none rounded-lg shadow sm:mt-0 sm:w-auto">
               Subscribe
             </button>
-          </form>
+          </form> */}
         </div>
         <ul className="grid gap-x-8 gap-y-10 mt-16 sm:grid-cols-2 lg:grid-cols-3">
           {posts.map((items, key) => (

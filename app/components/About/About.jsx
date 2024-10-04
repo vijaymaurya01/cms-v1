@@ -2,8 +2,12 @@
 import React from 'react';
 import Image from "next/image";
 import { useEffect, useState } from 'react';
+import Team from '../Homepage/team';
+import Faqs from '../FAQs/Faqs';
+import Stats from '../Stats/Stats';
+import Feature from '../Feature/Feature';
 
-export default function MainBanner() {
+export default function AboutUs() {
     const [state, setState] = useState(false);
 
     useEffect(() => {
@@ -25,7 +29,7 @@ export default function MainBanner() {
                     src="https://www.floatui.com/logo.svg"
                     width={120}
                     height={50}
-                    alt="Float UI logo"
+                    alt="Company logo"
                 />
             </a>
             <div className="md:hidden">
@@ -50,54 +54,59 @@ export default function MainBanner() {
         <div className='relative'>
             <div className='absolute inset-0 blur-xl h-[580px]' style={{ background: "linear-gradient(143.6deg, rgba(192, 132, 252, 0) 20.79%, rgba(232, 121, 249, 0.26) 40.92%, rgba(204, 171, 238, 0) 70.35%)" }}></div>
             <div className='relative'>
-
                 <section>
                     <div className="max-w-screen-xl mx-auto px-4 py-28 gap-12 text-gray-600 overflow-hidden md:px-8 md:flex">
                         <div className='flex-none space-y-5 max-w-xl'>
-                            <a href="javascript:void(0)" className='inline-flex gap-x-6 items-center rounded-full p-1 pr-6 border text-sm font-medium duration-150 hover:bg-white'>
-                                <span className='inline-block rounded-full px-3 py-1 bg-indigo-600 text-white'>
-                                    News
-                                </span>
-                                <p className='flex items-center'>
-                                    Read the launch post from here
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
-                                        <path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" />
-                                    </svg>
-                                </p>
-                            </a>
                             <h1 className="text-4xl text-gray-800 font-extrabold sm:text-5xl">
-                                Build your SaaS exactly how you want
+                                About <span className="text-indigo-600">Us</span>
                             </h1>
                             <p>
-                                Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
+                                We are dedicated to providing the best solutions in the industry. Our mission is to help you achieve your goals through innovative services and expert guidance.
+                            </p>
+                            <p>
+                                With years of experience, our team is committed to building long-lasting relationships with our clients and delivering exceptional value through quality service.
                             </p>
                             <div className='flex items-center gap-x-3 sm:text-sm'>
                                 <a href="javascript:void(0)" className="flex items-center justify-center gap-x-1 py-2 px-4 text-white font-medium bg-gray-800 duration-150 hover:bg-gray-700 active:bg-gray-900 rounded-full md:inline-flex">
-                                    Get started
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
-                                        <path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" />
-                                    </svg>
+                                    Get to Know Us
                                 </a>
                                 <a href="javascript:void(0)" className="flex items-center justify-center gap-x-1 py-2 px-4 text-gray-700 hover:text-gray-900 font-medium duration-150 md:inline-flex">
-                                    Contact sales
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
-                                        <path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" />
-                                    </svg>
+                                    Contact Us
                                 </a>
                             </div>
                         </div>
                         <div className='flex-1 hidden md:block'>
-                            {/* Make the image responsive */}
-                            <Image 
-                                src="https://raw.githubusercontent.com/sidiDev/remote-assets/c86a7ae02ac188442548f510b5393c04140515d7/undraw_progressive_app_m-9-ms_oftfv5.svg" 
-                                className="max-w-xl" 
-                                alt='Banner image'
-                                layout="responsive" // This makes the image responsive
-                                width={600} // Provide the intrinsic width
-                                height={300} // Provide the intrinsic height
-                            />
+                            <Image src="https://images.unsplash.com/photo-1620287341056-49a2f1ab2fdc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" className="max-w-xl" alt='About Us Image' width={600} height={200} />
                         </div>
                     </div>
+                </section>
+                <section>
+                <Feature/>
+
+                </section>
+                {/* Our Mission Section */}
+                <section className="py-20">
+                    <Stats/>
+                </section>
+
+                {/* Our Values Section */}
+                <section className="py-20">
+                    <div className="max-w-screen-xl mx-auto px-4 text-gray-600">
+                        <h2 className="text-3xl font-bold text-gray-800">Our Values</h2>
+                        <ul className="mt-4 list-disc list-inside">
+                            <li>Integrity: We uphold the highest standards of integrity in all our actions.</li>
+                            <li>Innovation: We continuously seek innovative solutions to meet our clients&apos; needs.</li>
+                            <li>Customer Commitment: We develop relationships that make a positive difference in our customers&apos; lives.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                {/* Meet the Team Section */}
+                <section className="py-20 bg-gray-100">
+                    <Team />
+                </section>
+                <section className="py-20 bg-gray-100">
+                    <Faqs />
                 </section>
             </div>
         </div>
