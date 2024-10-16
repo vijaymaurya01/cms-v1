@@ -22,6 +22,7 @@
     "@mui/material": "^6.1.1",
     "@nextui-org/react": "^2.4.8",
     "@phosphor-icons/react": "^2.1.7",
+    "firebase": "^10.14.1",
     "next": "14.2.13",
     "react": "^18",
     "react-dom": "^18",

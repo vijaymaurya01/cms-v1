@@ -1,7 +1,7 @@
 // app/blogs/page.js
 "use client";
 import Link from 'next/link';
-import BlogMainPage from '../BlogMainpage/page';
+import Blogs from '../BlogMainpage/page';
 
 const blogs = [
     { id: 1, title: "Blog Post 1", content: "This is the content for blog post 1." },
@@ -12,7 +12,7 @@ const blogs = [
 export default function Blog() {
     return (
         <div className="max-w-screen-xl mx-auto p-4">
-          <BlogMainPage/>
+          <Blogs/>
         </div>
     );
 }

@@ -5,7 +5,7 @@ import BlogList from '../components/BlogList/BlogList'
 // import Categories from '../components/Categories/Categories'
 import CategoriesPage from '../components/Categories/CategoriesPage'
 
-export default function BlogMainPage() {
+export default function Blogs() {
   return (
     <div>
       <BlogBanner/>

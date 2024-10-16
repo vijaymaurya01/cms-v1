@@ -1,13 +1,15 @@
 "use client";
 import Image from 'next/image'
 import React from 'react'
+// import { onAuthStateChanged } from 'firebase/auth';
+// import { auth } from '../firebase';
 
 export default function SignUpForm() {
-     return (
+    return (
         <main className="w-full h-screen flex flex-col items-center justify-center bg-gray-50 sm:px-4">
             <div className="w-full space-y-6 text-gray-600 sm:max-w-md">
                 <div className="text-center">
-                    <Image src="https://floatui.com/logo.svg" width={150} height={150} className="mx-auto" alt=''/>
+                    <Image src="https://floatui.com/logo.svg" width={150} height={150} className="mx-auto" alt='' />
                     <div className="mt-5 space-y-2">
                         <h3 className="text-gray-800 text-2xl font-bold sm:text-3xl">Create an account</h3>
                         <p className="">Already have an account? <a href="/Login" className="font-medium text-indigo-600 hover:text-indigo-500">Log in</a></p>
@@ -21,20 +23,12 @@ export default function SignUpForm() {
                     >
                         <div>
                             <label className="font-medium">
-                                Name
-                            </label>
-                            <input
-                                type="text"
-                                required
-                                className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
-                            />
-                        </div>
-                        <div>
-                            <label className="font-medium">
                                 Email
                             </label>
                             <input
                                 type="email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
                                 required
                                 className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
                             />
@@ -45,6 +39,8 @@ export default function SignUpForm() {
                             </label>
                             <input
                                 type="password"
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
                                 required
                                 className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
                             />
