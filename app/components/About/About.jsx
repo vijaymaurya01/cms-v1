@@ -76,7 +76,7 @@ export default function AboutUs() {
                             </div>
                         </div>
                         <div className='flex-1 hidden md:block'>
-                            <Image src="https://images.unsplash.com/photo-1620287341056-49a2f1ab2fdc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" className="max-w-xl" alt='About Us Image' width={600} height={200} />
+                            <Image src="/common/about.svg" className="max-w-xl" alt='About Us Image' width={600} height={200} />
                         </div>
                     </div>
                 </section>

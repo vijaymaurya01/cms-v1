@@ -89,7 +89,7 @@ export default function MainBanner() {
                         <div className='flex-1 hidden md:block'>
                             {/* Make the image responsive */}
                             <Image 
-                                src="https://raw.githubusercontent.com/sidiDev/remote-assets/c86a7ae02ac188442548f510b5393c04140515d7/undraw_progressive_app_m-9-ms_oftfv5.svg" 
+                                src="/common/main-banner.svg" 
                                 className="max-w-xl" 
                                 alt='Banner image'
                                 layout="responsive" // This makes the image responsive
